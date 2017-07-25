@@ -7,6 +7,60 @@ body {
   font-family: Helvetica;
 }
 
+div, header, footer {
+  border: 1px solid green;
+}
+
+/* common class properties */
+.site-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text-ucase {
+  text-transform: uppercase;
+}
+
+/* company header and footer */
+
+header, footer {
+  background-color: black;
+  color: white;
+}
+
+header .site-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+footer .site-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+#logo {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+#companyName {
+  font-size: 1rem;
+  padding: 0.66rem 0;
+}
+
+footer {
+  height: 5rem;
+}
+
+
+
+/* --- */
+/* responsive media queries */
+/* --- */
 
 @media only screen and (min-width: 449) and (max-width: 752px) {
  /* tablet portrait viewing */
